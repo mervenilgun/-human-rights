@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Özelliği Örnekleri</title>
+    <link rel="stylesheet" href="odev.css">
+</head>
+<body>
+    <!-- display: block örneği -->
+    <div>Bu bir blok örneğidir.</div>
+    <p>display: block örneği</p>
+
+    <!-- display: inline örneği -->
+    <span>display: inline örneği</span>
+    <a href="#">display: inline</a>
+
+    <!-- display: inline-block örneği -->
+    <div class="inline-block">display: inline-block </div>
+    <div class="inline-block">display: inline-block </div>
+    <div class="inline-block">display: inline-block </div>
+
+    <!-- display: none örneği -->
+    <div id="hidden-element">Bu öğe gizlendi.display: none</div>
+    <button onclick="document.getElementById('hidden-element').style.display='none';">Gizle</button>
+
+    <!-- display: flex örneği -->
+    <div class="flex-container">
+        <div class="item">display: flex </div>
+        <div class="item">display: flex </div>
+        <div class="item">display: flex </div>
+    </div>
+
+    <!-- display: grid örneği -->
+    <div class="grid-container">
+        <div class="item">display: grid </div>
+        <div class="item">display: grid </div>
+        <div class="item">display: grid </div>
+        <div class="item">display: grid </div>
+    </div>
+
+    <!-- position örneği -->
+    <div id="absolute-positioned">Position Örneği</div>
+</body>
+</html>
