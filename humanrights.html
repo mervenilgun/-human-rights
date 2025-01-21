@@ -6,12 +6,16 @@
     <title>İnsan Hakları</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="humanrights.css" rel="stylesheet">
 </head>
 <body>
+
 <!-- Navbar -->
 <header class="d-flex justify-content-center py-3 mb-4 border-bottom">
-    <nav class="navbar navbar-expand-sm navbar-light w-100">
+    <nav class="navbar navbar-expand-md navbar-light w-100">
         <a href="#" class="d-flex align-items-center text-decoration-none" style="pointer-events: none; margin-left: 20px;">
+
             <!-- Logo ve Başlık Kapsayıcısı -->
             <div class="d-flex align-items-center">
                 <img src="https://png.pngtree.com/thumb_back/fw800/background/20241202/pngtree-human-rights-day-logo-design-with-globe-and-fist-symbolism-image_16730569.jpg" alt="İnsan Hakları Logo" class="me-2" width="60" height="60">
@@ -25,20 +29,20 @@
         </button>
 
         <!-- Navbar Menüsü -->
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 40px;">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <!-- Anasayfa -->
                 <li class="nav-item">
-                    <button type="button" style="margin-left: 10px; background-color: white; color: black;">Ana Sayfa</button>
+                    <button type="button" class="btn btn-outline-primary ms-lg-3 ms-2" aria-label="Basic outlined example" style="margin-left: 30px;">
+                        Ana Sayfa
+                    </button>
                 </li>
-                
-
                 <!-- Kadın Hakları -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownKadınHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Kadın Hakları 👩‍🦱
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownKadınHakları">
                         <li><a class="dropdown-item" href="#">Kadınların Eğitimi</a></li>
                         <li><a class="dropdown-item" href="#">Kadınların İş Gücü</a></li>
                         <li><a class="dropdown-item" href="#">Kadın Sağlığı</a></li>
@@ -47,10 +51,10 @@
 
                 <!-- Çocuk Hakları -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownÇocukHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Çocuk Hakları 👶
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownÇocukHakları">
                         <li><a class="dropdown-item" href="#">Çocukların Eğitim Hakkı</a></li>
                         <li><a class="dropdown-item" href="#">Çocuk İşçiliği</a></li>
                         <li><a class="dropdown-item" href="#">Çocukların Sağlık Hakkı</a></li>
@@ -59,10 +63,10 @@
 
                 <!-- İfade Özgürlüğü -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownİfadeÖzgürlüğü" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         İfade Özgürlüğü 🗣️
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownİfadeÖzgürlüğü">
                         <li><a class="dropdown-item" href="#">Basın Özgürlüğü</a></li>
                         <li><a class="dropdown-item" href="#">Protesto Hakkı</a></li>
                         <li><a class="dropdown-item" href="#">Düşünce Özgürlüğü</a></li>
@@ -71,10 +75,10 @@
 
                 <!-- Savaş ve Sivil Haklar -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownSavaşHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Savaş ve Sivil Haklar ⚖️
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSavaşHakları">
                         <li><a class="dropdown-item" href="#">Savaş Hukuku</a></li>
                         <li><a class="dropdown-item" href="#">Sivillerin Korunması</a></li>
                         <li><a class="dropdown-item" href="#">Savaş Zamanı Haklar</a></li>
@@ -83,10 +87,10 @@
 
                 <!-- Engelli Hakları -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownEngelliHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Engelli Hakları ♿
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownEngelliHakları">
                         <li><a class="dropdown-item" href="#">Erişilebilirlik</a></li>
                         <li><a class="dropdown-item" href="#">Engelli Bireylerin Eğitimi</a></li>
                         <li><a class="dropdown-item" href="#">Engelli Sağlığı</a></li>
@@ -95,10 +99,10 @@
 
                 <!-- Eğitim ve Sağlığa Erişim -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownEğitimSağlık" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Eğitim ve Sağlığa Erişim 📚🩺
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownEğitimSağlık">
                         <li><a class="dropdown-item" href="#">Eğitim Hakkı</a></li>
                         <li><a class="dropdown-item" href="#">Sağlık Hakkı</a></li>
                         <li><a class="dropdown-item" href="#">Temel Hizmetlere Erişim</a></li>
@@ -157,135 +161,224 @@
         <p>İnsan hakları, 1948 yılında Birleşmiş Milletler tarafından kabul edilen İnsan Hakları Evrensel Beyannamesi ile uluslararası düzeyde kabul görmüştür. Bu belge, her bireyin sahip olduğu temel hakları güvence altına alır.</p>
     </article>
     
-    <!-- İnsan Hakları Temalı Kartlar -->
-    <div class="container">
-        <div class="row">
-            <!-- Kart 1: Eğitim Hakkı -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Eğitim Hakkı</h5>
-                        <p class="card-text">Her çocuğun kaliteli eğitim alması bir hak ve tüm dünya ülkeleri bu hakkı güvence altına almalıdır.</p>
-                    </div>
-                    <!-- Fotoğrafın alt kısmı için resim ekleme -->
-                    <img src="https://img.freepik.com/free-vector/family-enjoying-time-together_52683-37060.jpg?t=st=1737321653~exp=1737325253~hmac=c6a85c59322a6c0cc607e987b6ed137c3a1d3162b89aac5292d75846d5071a22&w=740" class="card-img-bottom" alt="Eğitim Hakkı Fotoğrafı">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary w-100">Detay</a>
-                    </div>
+<!-- İnsan Hakları Temalı Kartlar -->
+<div class="container">
+    <div class="row">
+        <!-- Kart 1: Eğitim Hakkı -->
+        <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <div class="card d-flex flex-column h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Eğitim Hakkı</h5>
+                    <p class="card-text">Her çocuğun kaliteli eğitim alması bir hak ve tüm dünya ülkeleri bu hakkı güvence altına almalıdır.</p>
+                </div>
+                <!-- Fotoğrafın alt kısmı için resim ekleme -->
+                <img src="https://img.freepik.com/free-vector/family-enjoying-time-together_52683-37060.jpg?t=st=1737321653~exp=1737325253~hmac=c6a85c59322a6c0cc607e987b6ed137c3a1d3162b89aac5292d75846d5071a22&w=740" class="card-img-bottom" alt="Eğitim Hakkı Fotoğrafı">
+                <div class="card-body mt-auto">
+                    <a href="#" class="btn btn-primary w-100">Detay</a>
                 </div>
             </div>
-    
-            <!-- Kart 2: Kadın Hakları -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Kadın Hakları</h5>
-                        <p class="card-text">Kadınlar, erkeklerle eşit haklara sahip olmalı ve toplumsal cinsiyet eşitliği sağlanmalıdır.</p>
-                    </div>
-                    <!-- Fotoğrafın alt kısmı için resim ekleme -->
-                    <img src="https://img.freepik.com/premium-vector/mom-hugs-her-daughter-happy-family-day-mother-love-child-international-women-day_427567-447.jpg?w=740" class="card-img-bottom" alt="Kadın Hakları Fotoğrafı">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary w-100">Detay</a>
-                    </div>
+        </div>
+
+        <!-- Kart 2: Kadın Hakları -->
+        <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <div class="card d-flex flex-column h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Kadın Hakları</h5>
+                    <p class="card-text">Kadınlar, erkeklerle eşit haklara sahip olmalı ve toplumsal cinsiyet eşitliği sağlanmalıdır.</p>
+                </div>
+                <!-- Fotoğrafın alt kısmı için resim ekleme -->
+                <img src="https://img.freepik.com/premium-vector/mom-hugs-her-daughter-happy-family-day-mother-love-child-international-women-day_427567-447.jpg?w=740" class="card-img-bottom" alt="Kadın Hakları Fotoğrafı">
+                <div class="card-body mt-auto">
+                    <a href="#" class="btn btn-primary w-100">Detay</a>
                 </div>
             </div>
-    
-            <!-- Kart 3: Çocuk Hakları -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Çocuk Hakları</h5>
-                        <p class="card-text">Çocukların sağlıklı bir şekilde büyüme, eğitim alma ve kötü koşullardan korunma hakkı vardır.</p>
-                    </div>
-                    <!-- Fotoğrafın alt kısmı için resim ekleme -->
-                    <img src="https://img.freepik.com/free-vector/people-playing-with-their-pets_52683-37109.jpg?t=st=1737321659~exp=1737325259~hmac=605a162e8f7430dc449e34ca03a613c7ba5637f2441befbf6dd5cdbeb0cea82a&w=740" class="card-img-bottom" alt="Çocuk Hakları Fotoğrafı">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary w-100">Detay</a>
-                    </div>
+        </div>
+
+        <!-- Kart 3: Çocuk Hakları -->
+        <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <div class="card d-flex flex-column h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Çocuk Hakları</h5>
+                    <p class="card-text">Çocukların sağlıklı bir şekilde büyüme, eğitim alma ve kötü koşullardan korunma hakkı vardır.</p>
+                </div>
+                <!-- Fotoğrafın alt kısmı için resim ekleme -->
+                <img src="https://img.freepik.com/free-vector/people-playing-with-their-pets_52683-37109.jpg?t=st=1737321659~exp=1737325259~hmac=605a162e8f7430dc449e34ca03a613c7ba5637f2441befbf6dd5cdbeb0cea82a&w=740" class="card-img-bottom" alt="Çocuk Hakları Fotoğrafı">
+                <div class="card-body mt-auto">
+                    <a href="#" class="btn btn-primary w-100">Detay</a>
                 </div>
             </div>
-    
-            <!-- Kart 4: İfade Özgürlüğü -->
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">İfade Özgürlüğü</h5>
-                        <p class="card-text">Herkes, düşüncelerini özgürce ifade etme hakkına sahiptir. Bu hak, demokrasi ve özgürlüğün temelidir.</p>
-                    </div>
-                    <!-- Fotoğrafın alt kısmı için resim ekleme -->
-                    <img src="https://img.freepik.com/free-vector/people-clapping-balconies_52683-37102.jpg?t=st=1737322047~exp=1737325647~hmac=0bee4b1331c05a96c27cb680799dc62620ca86226f10ded6ac4fae1f77530723&w=740" class="card-img-bottom" alt="İfade Özgürlüğü Fotoğrafı">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary w-100">Detay</a>
-                    </div>
+        </div>
+
+        <!-- Kart 4: İfade Özgürlüğü -->
+        <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <div class="card d-flex flex-column h-100">
+                <div class="card-body">
+                    <h5 class="card-title">İfade Özgürlüğü</h5>
+                    <p class="card-text">Herkes, düşüncelerini özgürce ifade etme hakkına sahiptir. Bu hak, demokrasi ve özgürlüğün temelidir.</p>
+                </div>
+                <!-- Fotoğrafın alt kısmı için resim ekleme -->
+                <img src="https://img.freepik.com/free-vector/people-clapping-balconies_52683-37102.jpg?t=st=1737322047~exp=1737325647~hmac=0bee4b1331c05a96c27cb680799dc62620ca86226f10ded6ac4fae1f77530723&w=740" class="card-img-bottom" alt="İfade Özgürlüğü Fotoğrafı">
+                <div class="card-body mt-auto">
+                    <a href="#" class="btn btn-primary w-100">Detay</a>
                 </div>
             </div>
         </div>
     </div>
-
-  <style>
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 10px;
-    justify-items: center;
-    margin: 0 auto; /* Center the grid container */
-  }
-
-  .grid img {
-    width: 100%;  /* Make the image responsive */
-    height: auto;
-    border-radius: 5px; /* Optional: gives a nice rounded corner to images */
-  }
-
-  /* Additional responsive breakpoints */
-  @media (max-width: 1200px) {
-    .grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for larger screens */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* For medium screens like tablets */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .grid {
-      grid-template-columns: 1fr; /* Stack images on small screens like mobiles */
-    }
-  }
-</style>
-
-<div class="grid text-center">
-  <div></div>
-  <div><img src="https://img.freepik.com/free-photo/revolution-still-life-design_23-2149061094.jpg?t=st=1737320090~exp=1737323690~hmac=bc3b89e70e1ccae6c92b173336f631951f3a036e7bb7adf6b85e03a7460386e1&w=360" alt="Fotoğraf 1"></div>
-  <div></div>
-  <div><img src="https://img.freepik.com/premium-photo/palestine-men-women-marching-street-asking-peace_843415-43622.jpg?w=360" alt="Fotoğraf 6"></div>
-  <div></div>
-  <div><img src="https://img.freepik.com/premium-photo/collage-celebrating-diversity_23-2151693839.jpg?ga=GA1.1.1369850830.1737319952&semt=ais_hybrid" alt="Fotoğraf 8"></div>
-  <div></div>
 </div>
 
+
+
+    <div class="container">
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+              İnsan Hakları: Herkes İçin Eşitlik
+            </h3>
       
-    <!-- Form Section -->
-    <section class="container my-5">
-        <h3>Fikirlerinizi Paylaşın</h3>
-        <form action="#" method="post">
-            <div class="mb-3">
-                <label for="name" class="form-label">Adınız</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Adınızı girin..." required>
+            <article class="blog-post">
+              <h2 class="display-5 link-body-emphasis mb-1">İnsan Hakları ve Adaletin Önemi</h2>
+              <p class="blog-post-meta">Ocak 1, 2025 tarafından <a href="#">Hi-Kod</a></p>
+      
+              <p>Bugün, insan haklarının herkes için nasıl hayati önem taşıdığını tartışıyoruz. İnsan hakları, tüm insanların eşit, özgür ve onurlu bir yaşam sürebilmesi için haklara sahip olduğu evrensel bir değerdir.</p>
+              <hr>
+              <p>Her bireyin temel hakları, onurlu bir yaşam sürebilmesi için gereklidir. Bu yazıda, insan hakları kapsamında mücadele edilmesi gereken temel konuları ele alacağız.</p>
+              <h2>Öne Çıkan Haklar</h2>
+              <p>İnsan hakları kapsamında birçok önemli alan vardır. Bu alanlar, tüm dünyada daha fazla farkındalık yaratmak için üzerinde yoğunlaşmamız gereken konulardır:</p>
+              <ul>
+                <li>Kadın Hakları</li>
+                <li>Çocuk Hakları</li>
+                <li>İfade Özgürlüğü</li>
+                <li>Mülteci Hakları</li>
+                <li>Adalet ve Hukuk</li>
+                <li>Engelli Hakları</li>
+                <li>Eğitim ve Sağlığa Erişim</li>
+                <li>Barış ve Uzlaşı Çabaları</li>
+              </ul>
+      
+              <h3>Empati ve Takım Çalışması</h3>
+              <p>Herkesin eşit haklara sahip olduğu bir dünya yaratmak için empati çok önemlidir. İhtiyaçları anlamak, sadece yardım etmek değil, aynı zamanda çözüm üretmek için bir yol haritası oluşturmak gerekir.</p>
+      
+              <blockquote class="blockquote">
+                <p>“Herkesin özgür ve eşit haklara sahip olmasını sağlamak, dünyanın daha barışçıl bir yer olmasını sağlar.”</p>
+              </blockquote>
+      
+              <p>İnsan hakları mücadelesi, yalnızca farkındalık yaratmakla kalmaz, aynı zamanda etkili çözümler geliştirmemize olanak tanır. Birlikte bu projeyle daha adil bir dünya inşa edebiliriz.</p>
+      
+              <h3>İnsan Hakları Teknolojisi</h3>
+              <p>Teknoloji, insan haklarının savunulmasında güçlü bir araç olabilir. Günümüzde teknoloji, adaletin sağlanmasında, bilgiye erişimde ve daha fazla insanın haklarını savunmasında önemli bir rol oynamaktadır.</p>
+              <pre><code>Örneğin, dijital platformlar insan hakları ihlallerini duyurmak için kullanılabilir.</code></pre>
+            </article>
+      
+            <article class="blog-post">
+              <h2 class="display-5 link-body-emphasis mb-1">Kadın Hakları ve Eşitlik Mücadelesi</h2>
+              <p class="blog-post-meta">Ocak 22, 2025 tarafından <a href="#">Hi-Kod</a></p>
+      
+              <p>Kadın hakları, insan hakları mücadelesinin önemli bir parçasıdır. Her kadının eşit haklara sahip olması için verdiğimiz mücadele devam etmektedir.</p>
+              <blockquote>
+                <p>“Kadın hakları, toplumun genel haklarıyla eşdeğer olmalıdır.”</p>
+              </blockquote>
+      
+              <p>Bu yazıda, kadın hakları alanında daha fazla farkındalık yaratmak ve eşitlik için yapılması gereken adımlar üzerine duruyoruz.</p>
+      
+              <h3>Global Kadın Hakları Hareketi</h3>
+              <p>Birçok ülkede, kadın hakları konusunda hala ciddi eşitsizlikler ve engeller bulunmaktadır. Dünya çapında, kadınların eğitim, iş gücü, sağlık ve güvenlik gibi temel hakları güvence altına alınmalıdır.</p>
+              <h4>Önerilen Adımlar:</h4>
+              <ul>
+                <li>Kadınların eğitime eşit erişimini sağlamak</li>
+                <li>Kadına yönelik şiddeti önlemek için politikalar geliştirmek</li>
+                <li>Çalışma hayatında eşit fırsatlar sunmak</li>
+              </ul>
+      
+              <p>Kadın hakları mücadelesi, toplumların daha adil ve eşit bir hale gelmesi için kritik öneme sahiptir.</p>
+            </article>
+      
+            <nav class="blog-pagination" aria-label="Pagination">
+              <a class="btn btn-outline-primary rounded-pill" href="#">Önceki</a>
+              <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Sonraki</a>
+            </nav>
+      
+          </div>
+      
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+              <div class="p-4 mb-3 bg-body-tertiary rounded">
+                <h4 class="fst-italic">Hakkında</h4>
+                <p class="mb-0">Bu blog, insan hakları ve adaletin yaygınlaştırılması için farkındalık yaratmayı hedefliyor. Dünyada haklar için mücadele edenlerin sesi olmak amacındayız.</p>
+              </div>
+      
+              <div>
+                <h4 class="fst-italic">Son Yazılar</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                      <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="https://www.cumhuriyet.com.tr/Archive//2022/3/8/160410383-kadin-hak-10.jpg" width="100%" height="100%" />
+                    </svg>
+                      <div class="col-lg-8">
+                        <h6 class="mb-0">Kadın Hakları ve Toplumsal Eşitlik</h6>
+                        <small class="text-body-secondary">Ocak 20, 2025</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                      <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="https://www.cumhuriyet.com.tr/Archive//2022/3/8/160410383-kadin-hak-10.jpg" width="100%" height="100%" />
+                    </svg>
+                      <div class="col-lg-8">
+                        <h6 class="mb-0">İfade Özgürlüğü ve Demokrasi</h6>
+                        <small class="text-body-secondary">Ocak 15, 2025</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                      <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="https://www.cumhuriyet.com.tr/Archive//2022/3/8/160410383-kadin-hak-10.jpg" width="100%" height="100%" />
+                    </svg>
+                      <div class="col-lg-8">
+                        <h6 class="mb-0">Mülteci Hakları ve Küresel Sorumluluk</h6>
+                        <small class="text-body-secondary">Ocak 10, 2025</small>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-            <div class="mb-3">
-                <label for="message" class="form-label">Mesajınız</label>
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Düşüncelerinizi yazın..." required></textarea>
+          </div>
+        </div>
+      </div>
+
+<!-- Form Section -->
+<footer class="footer">
+    <div class="footer-image">
+        <section class="container my-5 form-section">
+            <h3>Fikirlerinizi Paylaşın</h3>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Adınız</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Adınızı girin..." required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mesajınız</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Düşüncelerinizi yazın..." required></textarea>
+                    </div>
+                    
+                   <!-- Buton -->
+<div class="mb-3">
+    <button type="submit" id="submitButton" class="btn btn-primary">Gönder</button>
+</div>
+
+                    </div>
+                </form>
             </div>
-            
-            <button type="submit" class="btn btn-success">Gönder</button>
-        </form>
-    </section>
-    
+        </section>
+    </div>
+</footer>
+
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 İnsan Hakları. Tüm hakları saklıdır.</p>

@@ -1,0 +1,157 @@
+/* Navbar Genel Stil */
+.navbar {
+    background-color: #f8f9fa;
+        max-width: 100%; /* navbar genişliğini %100 yap */
+        padding: 0 10px; /* sol ve sağ padding ekleyerek sığdırma */
+        width: 100%;
+        display: flex;
+        border-radius: 40px;
+}
+
+/* Navbar menüsünü sağa hizala */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap; /* Öğelerin kırılmasını engelle */
+    justify-content: space-between; /* Öğeleri eşit mesafeye yay */
+    width: 100%;
+    position: relative;
+    justify-content: flex-start; /* Menü öğelerini yatayda ortalar */
+    padding: 0;
+    margin: 0;
+    white-space: wrap;  /* Menü öğelerini tek satırda tutar */
+    border: none;  /* Kenarlıkları kaldır */
+    border-radius: 40px;
+}
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column; /* Menü öğelerini dikey hizala */
+        align-items: flex-start; /* Menü öğelerini sola hizala */
+        width: 100%; /* Menü öğelerinin tamamını kapsayacak şekilde genişlet */
+        border: none;
+        
+    }
+}
+ul.navbar-nav {
+    margin-top: 20px; /* Yukarıdan 10px boşluk bırak */
+    background-color: white; /* Arka plan rengini beyaz yap */ 
+  }
+
+  @media (max-width: 768px) {
+    ul.navbar-nav {
+      padding-left: 250px;  /* Soldan 250px iç boşluk bırak */
+      padding-right: 15px;  /* Sağdan 15px iç boşluk bırak */
+    }
+  }
+
+
+/* Hamburger Menü Düğmesi */
+.navbar-toggler {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto; /* Hamburger menüsü butonunun konumunu ayarlamak */
+    border: none;  /* Kenarlıkları kaldır */
+    margin-right: 0; /* Varsayılan olarak sağa hizalanmışsa sola çekiyoruz */
+    padding-left: 10px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 0px;
+    flex: 1; /* Her öğe eşit genişlikte olacak */
+    text-align: left; /* Menü öğelerinin ortalanması */
+    list-style: none;
+    padding: 0 0px; /* Menü öğeleri arasındaki boşluk */
+    border: none;  /* Kenarlıkları kaldır */
+    justify-content: flex;
+}
+.navbar img {
+    border-radius: 40px;
+}
+/* Mobile ve küçük ekranlar için navbar düzenlemeleri */
+@media (max-width: 1200px) {
+    /* Mobilde, navbar'ı tam genişlik alacak şekilde yap */
+    .navbar-collapse {
+        width: 100%;
+        justify-content: center; /* Menü öğelerini ortalar */
+        border: none;  /* Kenarlıkları kaldır */
+    }
+
+    /* Navbar öğeleri arasındaki boşluğu artır */
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 0px;
+        border: none;  /* Kenarlıkları kaldır */
+    }
+
+    /* Logo boyutunu küçük ekranlarda küçült */
+    .navbar img {
+        border-radius: 40px;
+    }
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Yükseklik ihtiyaca göre ayarlanabilir */
+}
+
+.footer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.cumhuriyet.com.tr/Archive//2022/3/8/160410383-kadin-hak-10.jpg'); /* Fotoğraf URL'si */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Fotoğrafın şeffaflık seviyesi */
+    z-index: -1; /* Fotoğrafın formun altına yerleşmesini sağlar */
+}
+
+/* Form Section */
+.form-section {
+    position: relative;
+    z-index: 1; /* Formun fotoğrafın üstünde olmasını sağlar */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Form container */
+.form-container {
+    padding: 30px;
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    width: 70%; /* Formun genişliğini ayarlayın */
+    margin: 0 auto; /* Ortalamak için */
+    z-index: 1; /* Formun üstte görünmesini sağlar */
+}
+
+/* Form input fields */
+.form-control {
+    color: black; /* Yazı rengi siyah */
+    border: 1px solid #ccc; /* Çerçeve rengi */
+}
+
+/* Butonun başlangıç durumu */
+#submitButton {
+    background-color: #0056b3; /* Canlı mavi renk */
+    color: white; /* Beyaz yazı rengi */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    cursor: pointer; /* Fare simgesi */
+    font-size: 16px; /* Yazı büyüklüğü */
+    position: relative; /* Butonun konumlandırılabilmesi için */
+    z-index: 2; /* Diğer öğelere göre üstte kalması için */
+    opacity: 1; /* Buton şeffaflık sorunu çözülüyor */
+    transition: background-color 0.3s ease, z-index 0s ease; /* Hover geçişi */
+}
+
+/* Buton hover (fareyle üzerine gelindiğinde) durumu */
+#submitButton:hover {
+    background-color: #00408d; /* Hover durumunda daha koyu mavi */
+    z-index: 3; /* Hover durumunda da üstte kalması sağlanır */
+}
+
