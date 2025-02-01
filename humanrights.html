@@ -12,105 +12,87 @@
 <body>
 
 <!-- Navbar -->
-<header class="d-flex justify-content-center py-3 mb-4 border-bottom">
-    <nav class="navbar navbar-expand-md navbar-light w-100">
-        <a href="humanrights.html" class="d-flex align-items-center text-decoration-none" style="pointer-events: none; margin-left: 20px;">
-
-            <!-- Logo ve Başlık Kapsayıcısı -->
-            <div class="d-flex align-items-center">
-                <img src="https://png.pngtree.com/thumb_back/fw800/background/20241202/pngtree-human-rights-day-logo-design-with-globe-and-fist-symbolism-image_16730569.jpg" alt="İnsan Hakları Logo" class="me-2" width="60" height="60">
-                <span class="fs-4">İnsan Hakları</span>
-            </div>
-        </a>
-
-        <!-- Navbar Toggler (Hamburger Menüsü) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Menüsü -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <!-- Anasayfa -->
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary ms-lg-3 ms-2" aria-label="Basic outlined example" style="margin-left: 30px;">
-                        Ana Sayfa
-                    </button>
-                </li>
-                <!-- Kadın Hakları -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="womenrights.html" id="dropdownKadınHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Kadın Hakları 👩‍🦱
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownKadınHakları">
-                        <li><a class="dropdown-item" href="womenrights.html">Kadınların Eğitimi</a></li>
-                        <li><a class="dropdown-item" href="womenrights.html#isgucu">Kadınların İş Gücü</a></li>
-                        <li><a class="dropdown-item" href="womenrights.html#saglik">Kadın Sağlığı</a></li>
-                    </ul>
-                </li>
-
-                <!-- Çocuk Hakları -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownÇocukHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Çocuk Hakları 👶
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownÇocukHakları">
-                        <li><a class="dropdown-item" href="#">Çocukların Eğitim Hakkı</a></li>
-                        <li><a class="dropdown-item" href="#">Çocuk İşçiliği</a></li>
-                        <li><a class="dropdown-item" href="#">Çocukların Sağlık Hakkı</a></li>
-                    </ul>
-                </li>
-
-                <!-- İfade Özgürlüğü -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownİfadeÖzgürlüğü" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        İfade Özgürlüğü 🗣️
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownİfadeÖzgürlüğü">
-                        <li><a class="dropdown-item" href="#">Basın Özgürlüğü</a></li>
-                        <li><a class="dropdown-item" href="#">Protesto Hakkı</a></li>
-                        <li><a class="dropdown-item" href="#">Düşünce Özgürlüğü</a></li>
-                    </ul>
-                </li>
-
-                <!-- Savaş ve Sivil Haklar -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownSavaşHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Savaş ve Sivil Haklar ⚖️
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownSavaşHakları">
-                        <li><a class="dropdown-item" href="#">Savaş Hukuku</a></li>
-                        <li><a class="dropdown-item" href="#">Sivillerin Korunması</a></li>
-                        <li><a class="dropdown-item" href="#">Savaş Zamanı Haklar</a></li>
-                    </ul>
-                </li>
-
-                <!-- Engelli Hakları -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownEngelliHakları" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Engelli Hakları ♿
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownEngelliHakları">
-                        <li><a class="dropdown-item" href="#">Erişilebilirlik</a></li>
-                        <li><a class="dropdown-item" href="#">Engelli Bireylerin Eğitimi</a></li>
-                        <li><a class="dropdown-item" href="#">Engelli Sağlığı</a></li>
-                    </ul>
-                </li>
-
-                <!-- Eğitim ve Sağlığa Erişim -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownEğitimSağlık" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Eğitim ve Sağlığa Erişim 📚🩺
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownEğitimSağlık">
-                        <li><a class="dropdown-item" href="#">Eğitim Hakkı</a></li>
-                        <li><a class="dropdown-item" href="#">Sağlık Hakkı</a></li>
-                        <li><a class="dropdown-item" href="#">Temel Hizmetlere Erişim</a></li>
-                    </ul>
-                </li>
+<header class="py-3 mb-4 border-bottom">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <a href="humanrights.html" class="d-flex align-items-center text-decoration-none">
+        <!-- Logo ve Başlık -->
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20241202/pngtree-human-rights-day-logo-design-with-globe-and-fist-symbolism-image_16730569.jpg" alt="İnsan Hakları Logo" width="60" height="60" class="me-2">
+        <span class="fs-4">İnsan Hakları</span>
+      </a>
+      <!-- Mobil Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menü İçeriği -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Dropdown örneği -->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kadın Hakları👩‍🦱
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Kadınların Eğitimi</a></li>
+              <li><a class="dropdown-item" href="womenrights.html#isgucu">Kadınların İş Gücü</a></li>
+              <li><a class="dropdown-item" href="womenrights.html#saglik">Kadın Sağlığı</a></li>
             </ul>
-        </div>
-    </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Çocuk Hakları👶
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Çocukların Eğitim Hakkı</a></li>
+              <li><a class="dropdown-item" href="#">Çocuk İşçiliği</a></li>
+              <li><a class="dropdown-item" href="#">Çocukların Sağlık Hakkı</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              İfade Özgürlüğü🗣️
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Basın Özgürlüğü</a></li>
+              <li><a class="dropdown-item" href="#">Protesto Hakkı</a></li>
+              <li><a class="dropdown-item" href="#">Düşünce Özgürlüğü</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Savaş ve Sivil Haklar ⚖️
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Savaş Hukuku</a></li>
+              <li><a class="dropdown-item" href="#">Sivillerin Korunması</a></li>
+              <li><a class="dropdown-item" href="#">Savaş Zamanı Haklar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Engelli Hakları ♿
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Erişilebilirlik</a></li>
+              <li><a class="dropdown-item" href="#">Engelli Bireylerin Eğitimi</a></li>
+              <li><a class="dropdown-item" href="#">Engelli Sağlığı</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Eğitim ve Sağlığa Erişim 📚🩺
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Eğitim Hakkı</a></li>
+              <li><a class="dropdown-item" href="#">Sağlık Hakkı</a></li>
+              <li><a class="dropdown-item" href="#">Temel Hizmetlere Erişim</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 
    <!-- Header -->
